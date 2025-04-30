@@ -24,7 +24,7 @@ namespace MauiAppMinhasCompras.Moldes
             get => _qtn;
             set
             {
-                if (value == 0)
+                if (value <= 0)
                 {
                     throw new Exception("Quantidade tem que ser maior que 0");
                 }
